@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OEM Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div class="navbar navbar-dark bg-danger">
+      <div class="container">
+        <a href="#" class="navbar-brand">
+          OEM Calculator
+        </a>
+      </div>
+    </div>
+
+
+    <div class="container mt-3">
+
+      <div class="card">
+        <div class="card-body">
+          <form>
+            <div class="row">
+              <div class="form-group col-md-6">
+                <input type="text" id="productName" class="form-control" placeholder="Name">
+              </div>
+              <div class="form-group col-md-6">
+                <input type="text" id="productPrice" class="form-control" placeholder="Price">
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-sm mt-2 p-2 addBtn"><i class="fas fa-plus"></i>Add</button>
+            <button type="submit" class="btn btn-warning btn-sm mt-2 p-2 saveBtn"><i class="far fa-edit"></i>Save Changes</button>
+            <button type="submit" class="btn btn-danger btn-sm mt-2 p-2 removeBtn"><i class="fas fa-times"></i>Remove</button>
+            <button type="submit" class="btn btn-secondary btn-sm mt-2 p-2 cancelBtn"><i class="fas fa-arrow-circle-left"></i>Cancel</button>
+          </form>
+        </div>
+      </div>
+
+
+
+      <div class="card mt-3">
+        <table class="table-bordered border-secondary border-5 text-center">
+          <thead>
+            <tr class="p-3">
+              <th scope="col">ID</th>
+              <th scope="col">Name</th>
+              <th scope="col">Price</th>
+              <th scope="col">Edit</th>
+            </tr>
+          </thead>
+          <tbody id="item-list">
+          </tbody>
+        </table>
+      </div>
+
+
+      <div class="card mt-3">
+        <div class="card-footer text-end">
+          <p>Total (₺) <strong><span id="total-tl">0</span> TL</strong></p>
+          <p>Total ($) <strong><span id="total-dollar">0</span> USD</strong></p>
+        </div>
+      </div>
+
+
+
+
+
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
